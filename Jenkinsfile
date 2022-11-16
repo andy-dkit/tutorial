@@ -11,9 +11,7 @@ pipeline {
         stage("Download Code") {
             steps {
                 git branch: 'main', url: 'https://github.com/andy-dkit/tutorial.git'
-                sh "ls"
                 sh "cat test1.txt"
-                echo "hello again"
             }
         }
     }
